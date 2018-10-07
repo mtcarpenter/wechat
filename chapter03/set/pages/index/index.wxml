@@ -1,0 +1,29 @@
+<!--pages/index/index.wxml-->
+<view wx:if="{{books}}" class='container'>
+       <view class='title'>
+          <text>图书列表</text>
+       </view>
+       <view class='label'>
+          <text>书名</text>
+          <text>作者</text>
+          <text>价格</text>
+          <text>操作</text>
+       </view>
+      <block wx:for="{{books}}" wx:key="">
+            <view class='content'>
+              <text>{{item.name}}</text>
+              <text>{{item.author}}</text>
+              <text>{{item.price}}</text>
+              <button class='del' data-id='{{item._id}}' bindtap='onDel'>删除</button>
+              <button class='update'  data-id='{{item._id}}' bindtap='onUpdate'>修改</button>
+          </view>
+      </block>
+</view>
+<view wx:else="{{books}}" class='none'>
+      <text >暂时没有图书！</text>
+</view>
+
+<view class='add'>
+    <button  bindtap='goSet'>添加图书</button>
+</view>
+

@@ -1,0 +1,24 @@
+<!--pages/set/set.wxml-->
+<view class='container'>
+      <form bindsubmit='comfirm' >
+        <view class='input-container'>
+           <label>书名：</label>
+            <input style='display:none' data-value='{{id}}'  name="id" value='{{book._id}}'></input>
+           <input data-value='{{name}}'  name="name" value='{{book.name}}'></input>
+        </view>
+        <view class='input-container'>
+           <label>作者：</label>
+           <input data-value='{{author}}'  name="author" value='{{book.author}}'></input>
+        </view>
+        <view class='input-container'>
+           <label>价格：</label>
+           <input data-value='{{price}}'    name ="price" value='{{book.price}}'></input>
+        </view>
+        <view class='comfirm'>
+           <button   form-type='submit'>保存</button>
+      </view>
+    </form>
+
+  
+
+</view>

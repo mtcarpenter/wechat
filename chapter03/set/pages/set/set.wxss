@@ -1,0 +1,30 @@
+/* pages/set/set.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-container{
+  width: 750rpx;
+  display: inline-flex;
+  margin-top: 40rpx;
+  justify-content: center;
+}
+.input-container input{
+  border:1rpx solid #ddd;
+  border-radius: 14rpx;
+  padding: 10rpx;
+}
+.comfirm {
+    position: fixed;
+    width: 750rpx;
+    height: 120rpx;
+    bottom: 0;
+}
+.comfirm button{
+  margin: 0 10rpx;
+  border-radius: 14rpx 15rpx;
+  background-color: #1aad16;
+  color: #ffffff;
+}
